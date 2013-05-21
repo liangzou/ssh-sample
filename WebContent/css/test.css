@@ -1,0 +1,28 @@
+.p5{font-size: 15px; font-family:Arial; margin-left:20px;margin-top:3px; font-weight: bold; color: maroon;}
+.p1{background-color: gray;width:80px;height:40px;display: inline-block;*display:inline;*zoom:1;inheight:20px}
+.d1,.d2,.d3{
+    border-radius:3px 3px 3px 3px;   
+    border-right: 1px solid silver;
+    background:orange;
+    width:80px;
+    height:23px;
+    margin:0px;
+    float:left; 
+}
+.d4{border-radius:3px 3px 3px 3px; 
+   border: 2px solid silver;
+   margin-left:0px;
+   width:240px;
+   height:150px;
+}
+
+.d5,.d6{border-radius:3px 3px 3px 3px; 
+   border: 2px solid silver;
+   margin-left:0px;
+   width:240px;
+   height:150px;
+   display:none;
+}
+.div1{
+	margin-left: 300px;
+}

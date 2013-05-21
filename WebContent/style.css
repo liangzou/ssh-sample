@@ -1,0 +1,52 @@
+@CHARSET "GBK";
+   *{margin:0;padding:0;border:0;}
+  .1{ background:url(../../../Images/sucai/header_bg.png); background-position:bottom; height:80px; margin-top:0px; }
+  .2{ margin-top:0px; padding-top:1px; padding-bottom:5px; border:solid 1px;}
+  .3{ background:none; no-repeat; height:120px;}
+  /* .4{font-size: 15px;color:black;} */
+  .4{float:left; margin-left:30px;position: relative;}
+  input.show{background-color: orange; width:40px;height:20px;}
+  h1.hide{color: red;}
+  .header{background-color:orange; height:100px; width:100%; margin-left: 0px;margin-top:0px;}
+  
+  .search1{font-family: Arial;font-size: 20px; line-height: 2}
+  .s{ float:left; width:100%;height:49px; position: relative;}
+   input#search{height:41px;width:333px;margin-left:400px; border:3px solid orange; border-radius:0 0 0px 0px; }
+   button{
+	background:orange;
+	position:absolute;
+	width:133px;
+	height:47px;
+	font-family:serif;
+	font-size:25px;
+	border:0px solid orange;
+	border-radius:0 5px 5px 0;
+	margin:0px;
+	left: 736px;
+	top: 0px;
+}
+/*   *{padding=0px;margin=0px;} */
+   
+ 
+  div#tmdDial{ display:none;
+               position: absolute; 
+               top:70%;left:50%;width:500px;height:500px;
+               margin:-251px 0 0 -251px;            
+               border:1px solid blue; 
+               background:lightblue;
+               }
+   .tmdopen{  
+    /* background:orange; width:400px; hight:43px; */
+   }
+  
+  input#tmdclose{position: absolute; bottom:5px; right:5px;}
+    li{ list-style:none; display:inline; }  
+  
+   a{float:left ; width:7em; margin-left:100px; text-decoration:none; font-family:"Î¢ÈíÑÅºÚ"; font-size:15px;}   
+  .background{background:#E87019; font-size:18px;} 
+  
+  h1{color:green;}
+  .p1{color:green;} 
+  p{font-family: serif; font-size: 25px};
+  
+  
