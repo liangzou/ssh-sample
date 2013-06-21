@@ -24,10 +24,33 @@
           "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
           "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
+	
+	
     <package name="default" extends="struts-default">
+    	<interceptors>
+		   <interceptor name="simpleInterceptor" class="cn.edu.util.SimpleInterceptor"></interceptor>		
+	       <interceptor name="MethodInterceptor" class="cn.edu.util.MymethodInterceptor"></interceptor>
+	       <interceptor-stack name="mystack">
+	       	 <interceptor-ref name="simpleInterceptor"></interceptor-ref>
+	       	 <interceptor-ref name="MethodInterceptor">	
+        	   <!--<param name="excludeMethods">execute</param>-->
+        	</interceptor-ref>
+	       </interceptor-stack>
+	    </interceptors>
+	    
         <action name="register" class="cn.edu.njupt.action.UserAction">
+        	<interceptor-ref name="fileUpload">
+        		<param name="maximumSize">10240000</param>
+        		<param name="allowedTypes">image/gif,image/jpeg,application/octet-stream</param>
+        	</interceptor-ref>
+        	  	 
+        	
+        	
+        	<interceptor-ref name="defaultStack"></interceptor-ref>	
+        	<interceptor-ref name="mystack"></interceptor-ref>
+        	<param name="savePath">D:\myeclipse work1\ssh-sample\WebContent\files</param> 
             <result name="success" type="redirect">/jsp/index.jsp</result>
-            <result name="fail" >/fail.jsp</result>
+            <result name="input" >/fail.jsp</result>
         </action>
     </package>
 

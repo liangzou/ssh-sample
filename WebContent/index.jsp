@@ -9,11 +9,23 @@
 <title>User RSegisteration</title>
 </head>
 <body>
-  <form method="post" action="register">
-    学生ID:<input type="text" name="userid">
-   学生姓名：<input type ="text" name="username">
-   <input type="submit" value="提交" >  
-    </form>
+  <form method="post" action="register" enctype="multipart/form-data">
+  <table>
+  <tr>
+     <td>  学生ID:<input type="text" name="userid"></td>         
+  </tr>
+  <tr>   
+      <td>学生姓名：<input type ="text" name="username"></td>
+  </tr>
+   <tr>   
+      <td>上传文件<input type="file" name="fileupload" value="文件"></td>
+  </tr> 
+  
+  
+  
+  </table>  
+   <input type="submit" name="submit">
+  </form>
    
 </body>
 </html>
