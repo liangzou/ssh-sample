@@ -13,11 +13,7 @@
     学生ID:<input type="text" name="userid">
    学生姓名：<input type ="text" name="username">
    <input type="submit" value="提交" >  
-    <form method="post" onsubmit="sum(num1,num2)">
-   Num1<input type="text" name="num1">
-   Num2<input type ="text" name="num2">
-   <input type ="text" name="total">
-   <input type="submit" value="提交" >
+    </form>
    
 </body>
 </html>
